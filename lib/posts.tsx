@@ -24,7 +24,7 @@ export const getSortedPostsData = () =>  {
     return {
       id,
       ...matterResult.data
-    }
+    } as any;
   })
   // Sort posts by date
   return allPostsData.sort(({ date: a }, { date: b }) => {

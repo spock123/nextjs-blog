@@ -7,7 +7,7 @@ import Link from 'next/link';
 const name = 'First Next App';
 export const siteTitle = 'This is my first site';
 
-const Layout = ({ children, home}) => {
+const Layout = ({ children, home }: { children: any; home?: boolean}) => {
   return (
     <div className={styles.container}>
       <Head>
